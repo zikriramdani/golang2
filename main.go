@@ -20,7 +20,7 @@ func main() {
 	log.Fatal(http.ListenAndServe(":8080", router))
 
 	// mux := new(CustomMux)
-	// mux.RegisterMiddleware(MiddlewareJWTAuthorization)
+	// mux.RegisterMiddleware(controllers.MiddlewareJWTAuthorization)
 
 	// mux.HandleFunc("/index", HandlerIndex)
 	// mux.HandleFunc("/login", HandlerLogin)
