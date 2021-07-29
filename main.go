@@ -18,6 +18,19 @@ func main() {
 	router := mux.NewRouter().StrictSlash(true)
 	initaliseHandlers(router)
 	log.Fatal(http.ListenAndServe(":8080", router))
+
+	// mux := new(CustomMux)
+	// mux.RegisterMiddleware(MiddlewareJWTAuthorization)
+
+	// mux.HandleFunc("/index", HandlerIndex)
+	// mux.HandleFunc("/login", HandlerLogin)
+
+	// server := new(http.Server)
+	// server.Handler = mux
+	// server.Addr = ":8080"
+
+	// fmt.Println("Starting server at", server.Addr)
+	// server.ListenAndServe()
 }
 
 func initaliseHandlers(router *mux.Router) {
