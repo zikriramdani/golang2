@@ -1,6 +1,7 @@
 ## Golang Login
 
 go mod init chapter-c32
+go get -u
 
 ### Salah satu dari packages tersebut adalah jwt-go, yang digunakan untuk keperluan JWT.
 go get -u github.com/dgrijalva/jwt-go@v3.2.0
